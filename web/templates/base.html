@@ -1,4 +1,5 @@
 {% load i18n %}
+{% load static %}
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 
@@ -14,10 +15,10 @@
 	<meta name="robots" content="noindex,nofollow">
 	<title>Dr.ScratchJr</title>
 	<!-- Favicon icon -->
-	<link rel="icon" type="image/png" sizes="16x16" href="/drscratchjr/web/static/plugins/images/favicon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{% static '/plugins/images/favicon.png' %}">
 	<!-- Custom CSS -->
-	<link href="/drscratchjr/web/static/css/style.min.css" rel="stylesheet">
-	<link href="/drscratchjr/web/static/css/templatemo-style.css" rel="stylesheet">
+	<link href="{% static '/css/style.min.css' %}" rel="stylesheet">
+	<link href="{% static '/css/templatemo-style.css' %}" rel="stylesheet">
 </head>
 
 <body>
@@ -39,12 +40,12 @@
 					<a class="navbar-brand" href="/">
 						<!-- Logo Dr -->
 						<b class="logo-icon">
-							<img src="/drscratchjr/web/static/plugins/images/logo-dr.png" alt="homepage" />
+							<img src="{% static '/plugins/images/logo-dr.png' %}" alt="homepage" />
 						</b>
 						<!--End Logo Dr -->
 						<!-- Logo Scratchjr -->
 						<span class="logo-text">
-							<img src="/drscratchjr/web/static/plugins/images/logo-scratchjr.svg" alt="homepage" />
+							<img src="{% static '/plugins/images/logo-scratchjr.svg' %}" alt="homepage" />
 						</span>
 						<!--End Logo Scratchjr -->
 					</a>
@@ -323,7 +324,7 @@
 			<!-- Footer -->
 			<!-- ============================================================== -->
 			<footer class="footer text-center"> 
-				<img src="/drscratchjr/web/static/plugins/images/jr.svg" alt="" width="60px" height="60px">
+				<img src="{% static '/plugins/images/jr.svg' %}" alt="" width="60px" height="60px">
 				2021 © Dr.ScratchJr!
 			</footer>
 			<!-- ============================================================== -->
@@ -340,16 +341,16 @@
 	<!-- ============================================================== -->
 	<!-- All Jquery -->
 	<!-- ============================================================== -->
-	<script src="/drscratchjr/web/static/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="{% static '/plugins/bower_components/jquery/dist/jquery.min.js' %}"></script>
 	<!-- Bootstrap tether Core JavaScript -->
-	<script src="/drscratchjr/web/static/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="/drscratchjr/web/static/js/app-style-switcher.js"></script>
+	<script src="{% static '/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+	<script src="{% static '/js/app-style-switcher.js' %}"></script>
 	<!--Wave Effects -->
-	<script src="/drscratchjr/web/static/js/waves.js"></script>
+	<script src="{% static '/js/waves.js' %}"></script>
 	<!--Menu sidebar -->
-	<script src="/drscratchjr/web/static/js/sidebarmenu.js"></script>
+	<script src="{% static '/js/sidebarmenu.js' %}"></script>
 	<!--Custom JavaScript -->
-	<script src="/drscratchjr/web/static/js/custom.js"></script>
+	<script src="{% static '/js/custom.js' %}"></script>
 	<!--This page JavaScript -->
 	<script type="text/javascript">
 	

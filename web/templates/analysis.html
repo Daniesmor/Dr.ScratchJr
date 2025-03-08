@@ -3,7 +3,7 @@
 
 {% block goback %}
   <h4 style="cursor:pointer" class="page-title text-uppercase font-medium font-14" onClick="history.go(-1);">
-    <img src="/web/static/plugins/images/back.png" alt="back-icon" width="45px" height="35px"/>
+    <img src="{% static '/plugins/images/back.png' %}" alt="back-icon" width="45px" height="35px"/>
     <b style="color: white; padding-left:10px;">{% trans " Go Back" %}</b>
   </h4>
 {% endblock %}

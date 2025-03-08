@@ -130,7 +130,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/web/static/'
+STATIC_URL = '/drscratchjr/web/static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 ACCOUNT_ACTIVATION_DAYS = 2
 
